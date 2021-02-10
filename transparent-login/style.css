@@ -1,16 +1,14 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url(images/bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
 }
 
 .page-container {
   height: 100vh;
   width: 100vw;
+  background-image: url(https://i.pinimg.com/originals/a1/88/27/a18827158c5845afc342a9bc4a1bfdcd.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,5 +16,47 @@ body {
 }
 
 .login-container {
+  color: white;
+  background-color:hsla(201, 100%, 6%,0.6);
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
   border: 4px solid green;
+}
+
+.login-header {
+  text-align: center;
+  font-weight: lighter;
+}
+
+.input-group {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+  padding: 0 16px;
+}
+
+.input-group input:focus {
+  border: 1px solid hsl(201, 100%, 50%);
+}
+
+.input-group input{
+  background: hsla(201,100%,50%,0.5);
+  border: none;
+  margin-bottom: 16px;
+}
+
+.login-button {
+  background: hsla(201,100%,50%,0.5);
+  border: none;
+  color: white;
+  margin: 16px 0;
+  outline: none;
+  padding: 0 16px;
+  width: 100%;
+}
+
+.login-button:hover {
+  background: hsla(201, 100%, 50%, 0.8);
+  cursor: pointer;
 }
