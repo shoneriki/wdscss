@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(images/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.page-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid black;
+}
+
+.login-container {
+  border: 4px solid green;
+}
