@@ -85,6 +85,6 @@ html,body {
 }
 
 .login-button:hover {
-  background: hsla(201, 100%, 50%, 0.3);
+  background: hsla(201, 100%, 50%, 0.5);
   cursor: pointer;
 }
