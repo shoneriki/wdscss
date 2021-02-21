@@ -76,19 +76,24 @@ body{
 
 .avatar1::before,
 .avatar1::after {
+  --scale: 0;
   position: absolute;
   top: -.25rem;
   left: 50%;
-  transform: translateX(-50%) translateY(-100%);
+  transform: translateX(-50%) translateY(-100%) scale(var(--scale));
 }
 
 .avatar1::before {
   content: attr(data-tooltip);
   color: white;
   background-color: green;
-  border-radius: .3rem;
+  border-radius: .5rem;
   padding: .5rem;
   text-align: center;
   width: max-content;
   max-width: 100%;
+}
+
+.avatar1:hover::before {
+  --scale: 1;
 }
