@@ -20,16 +20,20 @@ body{
   position: relative;
 }
 
+/* 1 */
 .avatar::before,
 .avatar::after {
+  --scale: 0;
+
   position: absolute;
   top: -.25rem;
   left: 50%;
   height: 50px;
   width: 50px;
-  transform: translateX(-50%) translateY(-100%);
+  transform: translateX(-50%) translateY(-100%) scale(var(--scale));
 }
 
+/* 2 */
 .avatar::before {
   padding: .5rem;
   width: max-content;
@@ -38,5 +42,10 @@ body{
   content: attr(data-tooltip);
   color: white;
   text-align: center;
-  border-radius: 10px;
+  border-radius: .3rem;
+}
+
+/* 3 */
+.avatar:hover::before{
+  --scale: 1;
 }
