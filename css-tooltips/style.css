@@ -24,6 +24,10 @@ body{
 .avatar::after {
   position: absolute;
   top: -.25rem;
+  left: 50%;
+  height: 50px;
+  width: 50px;
+  transform: translateX(-50%) translateY(-100%);
 }
 
 .avatar::before {
