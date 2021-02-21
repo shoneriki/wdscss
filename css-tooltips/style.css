@@ -18,3 +18,7 @@ body{
   height: 100px;
   width: 100px;
 }
+
+.avatar:hover::after {
+  content: attr(data-tooltip);
+}
