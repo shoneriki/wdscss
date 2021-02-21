@@ -38,4 +38,5 @@ body{
   content: attr(data-tooltip);
   color: white;
   text-align: center;
+  border-radius: 10px;
 }
