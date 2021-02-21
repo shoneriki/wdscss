@@ -24,6 +24,7 @@ body{
 .avatar::before,
 .avatar::after {
   --scale: 0;
+  --tooltip-color: #333;
 
   position: absolute;
   top: -.25rem;
@@ -35,7 +36,7 @@ body{
 
 /* 2 */
 .avatar::before {
-  background-color: #333;
+  background: var(--tooltip-color);
   border-radius: .3rem;
   color: white;
   content: attr(data-tooltip);
@@ -55,5 +56,5 @@ body{
 .avatar::after {
   content: '';
   border: 10px solid transparent;
-  border-top-color: black;
+  border-top-color:var(--tooltip-color);
 }
