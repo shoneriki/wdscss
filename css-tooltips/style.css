@@ -71,22 +71,25 @@ body{
   content: '';
   border: var(--arrow-size) solid transparent;
   border-top-color:var(--tooltip-color);
-  transform-origin: top center ;
+  transform-origin: top center;
 }
 
 .avatar1::before,
 .avatar1::after {
   --scale: 0;
+  --tooltip-color: green;
   position: absolute;
   top: -.25rem;
   left: 50%;
   transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+  transition: 150ms transform;
+  transform-origin: bottom center;
 }
 
 .avatar1::before {
   content: attr(data-tooltip);
   color: white;
-  background-color: green;
+  background-color: var(--tooltip-color);
   border-radius: .5rem;
   padding: .5rem;
   text-align: center;
@@ -94,6 +97,13 @@ body{
   max-width: 100%;
 }
 
-.avatar1:hover::before {
+.avatar1:hover::before,
+.avatar1:hover::after {
   --scale: 1;
+}
+
+.avatar1::after {
+  border: 10px solid transparent;
+  border-top-color: var(--tooltip-color);
+  content: '';
 }
