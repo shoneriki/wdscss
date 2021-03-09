@@ -100,5 +100,25 @@ body{
   border-left-width: 1px;
   border-right-width: 1px;
   border-top-width: 2px;
+}
 
+.ears {
+  z-index: -1;
+  position: absolute;
+  width: 340px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.ear {
+  width: 25px;
+  height: 70px;
+  border: 2px solid hsl(19, 46%, 68%);
+  background: hsl(19, 76%, 85%);
+  border-radius: 0 100% 100% 0;
+}
+
+.ear:first-child {
+  border-radius: 100% 0 0 100%;
 }
