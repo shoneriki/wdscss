@@ -1,6 +1,7 @@
 body {
   margin: 0;
   --nav-load-time: 300ms;
+  --nav-link-load-time: 500ms;
 }
 
 nav {
@@ -19,6 +20,12 @@ nav li {
   list-style: none;
   padding: 10px;
   margin: 0 10px;
+  animation-name: nav-link-load;
+  animation-duration: var(--nav-link-load-time);
+  animation-timing-function: ease-in;
+  animation-delay: var(--nav-load-time);
+  animation-fill-mode: forwards;
+  transform: scale(0);
 }
 
 nav li:hover {
@@ -40,5 +47,17 @@ main {
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes nav-link-load {
+  0% {
+    transform: scale(0);
+  }
+  90% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
