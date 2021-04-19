@@ -28,6 +28,11 @@ nav li {
   transform: scale(0);
 }
 
+nav li:first-child {
+  animation-name: nav-first-link-load;
+  transform: translateX(-1000%);
+}
+
 nav li:hover {
   background-color: #FFFFFF44;
 }
@@ -59,5 +64,17 @@ main {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes nav-first-link-load {
+  0% {
+    transform: translateX(-1000%);
+  }
+  90% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
