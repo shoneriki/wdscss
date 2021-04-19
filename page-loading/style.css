@@ -1,10 +1,12 @@
 body {
   margin: 0;
+  --nav-load-time: 300ms;
 }
 
 nav {
   background-color: rgb(0, 61, 92);
   color: white;
+  animation: nav-load var(--nav-load-time) ease-in;
 }
 
 nav ul {
@@ -30,4 +32,13 @@ nav a {
 
 main {
   padding: 30px;
+}
+
+@keyframes nav-load {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
