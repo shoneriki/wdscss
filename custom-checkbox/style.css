@@ -37,4 +37,8 @@
 .checkbox-container input[type='checkbox']:checked + label::before {
   content: '\002714';
   background-color: #27AE60;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
