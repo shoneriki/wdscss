@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox-container label {
+  cursor: pointer;
+}
+
+.checkbox-container input[type='checkbox'] {
+  cursor: pointer;
+}
