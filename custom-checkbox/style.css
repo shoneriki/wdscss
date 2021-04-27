@@ -30,6 +30,10 @@
   background-color: #bada55;
 }
 
+.checkbox-container input[type='checkbox']:focus + label::before {
+  box-shadow: 0 0 20px black;
+}
+
 .checkbox-container input[type='checkbox']:checked + label::before {
   content: '\002714';
   background-color: #27AE60;
