@@ -34,10 +34,11 @@ body {
   background-color: white;
   border: 10px solid #069;
   color: #069;
+  transform: translateZ(75px);
 }
 
 .hover-side {
   color: white;
   background-color:#069;
-  transform: rotateX(90deg);
+  transform: rotateX(90deg) translateZ(75px);
 }
