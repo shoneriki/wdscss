@@ -13,10 +13,11 @@ body {
   width: 450px;
   transform-style: preserve-3d;
   transition: transform 300ms ease-out;
+  transform: translateZ(-75px);
 }
 
 .btn:hover {
-  transform: rotateX(-90deg);
+  transform: rotateX(-90deg) translateY(75px);
 }
 
 .side {
