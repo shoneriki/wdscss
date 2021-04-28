@@ -23,5 +23,9 @@
   background-color: white;
   border: 10px solid #069;
   color: #069;
+}
 
+.hover-side {
+  color: white;
+  background-color:#069;
 }
