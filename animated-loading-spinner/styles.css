@@ -21,7 +21,7 @@
 }
 
 .spinner-text {
-  animation: loading-opacity 2s ease-in infinite;
+  animation: loading-opacity 3s ease-in-out infinite;
   font-size: 2em;
 }
 
