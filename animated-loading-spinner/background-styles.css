@@ -1,1 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;700&display=swap');
 
+* {
+  font-family:'Vollkorn', sans-serif;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dfdfdf;
+}
