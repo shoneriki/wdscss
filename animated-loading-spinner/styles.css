@@ -20,6 +20,7 @@
 }
 
 .spinner-sector-blue {
+  animation: rotate 1s ease infinite;
   border-top: 15px solid lightblue;
 }
 
@@ -29,4 +30,9 @@
 
 .spinner-sector-green {
   border-top: 15px solid lightgreen;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0); }
+  to { transform: rotate(360deg); }
 }
