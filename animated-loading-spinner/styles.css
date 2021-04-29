@@ -17,7 +17,7 @@
   width: 100%;
   height: 100%;
   border: 15px solid transparent;
-
+  mix-blend-mode: overlay;
 }
 
 .spinner-sector-blue {
