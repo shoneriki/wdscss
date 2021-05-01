@@ -69,3 +69,20 @@ body {
   flex-direction: column;
 }
 
+.video-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: .5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.video-channel-name {
+  margin-bottom: .1rem;
+  text-decoration: none;
+  color: #555;
+}
+
+.video-channel-name:hover {
+  color: #111;
+}
