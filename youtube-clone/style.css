@@ -142,4 +142,12 @@ body {
   background-color: #ddd;
 }
 
+.category.active {
+  background-color: #606060;
+  color: white;
+  border-color: #eee;
+}
 
+.category:last-child{
+  margin-right: 0;
+}
